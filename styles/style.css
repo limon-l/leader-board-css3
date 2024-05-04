@@ -216,3 +216,20 @@ Top Blogs
     width: 20.03px;
     margin-right: 5px;
 }
+
+
+/* -------------- 
+   Media Queries
+  -------------- */
+
+  @media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .top-players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .course, .courses{
+        flex-direction: column;
+    }
+  }
